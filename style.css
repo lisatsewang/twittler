@@ -1,0 +1,88 @@
+a {
+	text-decoration: none;
+}
+
+body {
+	background-color: #888888;
+}
+
+header {
+	background-color: white;
+	margin: auto;
+	width: 600px;
+	border-radius: 7px;
+}
+
+header img {
+	display: inline-block;
+	margin-top: 10px;
+	margin-left: 160px;
+	height: 70px;
+}
+
+h1 {
+	font-family: Arial;
+	font-size: 65px;
+	font-weight: bold;
+	color: #00CCFF;
+	display: inline-block;
+
+}
+
+section {
+	background-color: white;
+	margin: auto;
+	margin-top: 5px; 
+	padding: 50px 0 25px 0;
+	width: 600px;
+	border-radius: 7px;
+}
+
+.tweet-block {
+	margin-bottom: 45px;
+	margin-left: 85px;
+	display: block;
+	min-height: 45px;
+}
+
+div img {
+	width: 50px;
+	float: left;
+	margin-right: 15px;
+}
+
+.user, .time, .tweet {
+	font-family: Arial;
+	font-size: 12px;
+	color: #686868;
+	margin-bottom: 3px;
+	display: inline-block;
+	width: 350px;
+}
+
+.user span {
+	font-weight: bold;
+	font-size: 14px;
+	color: black;
+}
+
+.tweet {
+	font-size: 14px;
+	color: black;
+}
+
+#timelineTitle {
+	background-color: #00CCFF;
+	width: 600px;
+	height: 45px;
+	margin-top: -20px;
+	padding-top: 10px;
+	font-family: arial;
+	font-size: 30px;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+}
+
+
+

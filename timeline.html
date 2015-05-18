@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <script src="jquery.js"></script>
+    <script src="data_generator.js"></script>
+    <script src="helper.js"></script>
+  </head>
+  <body>
+    <header>
+      <a href="index.html"><img src="bird-s.png" alt="bird">
+      <h1>twittler</h1></a>
+    </header>
+    <section>
+      <div id="timeline"></div>
+    </section>
+    <script> 
+
+      $(document).ready(function() {
+        var thisUser = getUrlParameter("name");
+        $('section').prepend('<p id="timelineTitle">' + thisUser + '\'s timeline<p>');
+        
+        var thisTweets = streams.users[thisUser];
+        var index = 0;
+        updateTweet(thisTweets, index, $('#timeline'));
+        setInterval(updateTweet, 2000, thisTweets, index, $('#timeline'));
+    });
+      
+    </script>
+  </body>
+</html>
